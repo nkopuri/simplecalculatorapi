@@ -2,7 +2,7 @@ from flask import Flask, request
 app = Flask(__name__)
 @app.route('/')
 def index():
-    return 'Welcome to my simple calculator'
+    return 'Welcome to my simplified calculator where you can only add,subtract,multiply and divide'
 def add2num(x, y):
     return (x + y)
 
@@ -42,6 +42,7 @@ def mult():
     x = int(request.args.get('x'))
     y = int(request.args.get('y'))
     return str(mult2num(x,y))
+
 
 @app.route('/math')
 def math():
