@@ -2,7 +2,7 @@ from flask import Flask, request
 app = Flask(__name__)
 @app.route('/')
 def index():
-    return 'Welcome to my calculator'
+    return 'Welcome to my simple calculator'
 def add2num(x, y):
     return (x + y)
 
